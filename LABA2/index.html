@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: green;">`
+    <div id="videos" style="display: flex;">
+        <!-- /* 
+            allow - список разрешенных функций, которые могут быть использованы в iframe
+            accelerometer - позволяет iframe получать доступ к данным акселерометра
+            autoplay - позволяет iframe автоматически воспроизводить контент
+            clipboard-write - позволяет iframe записывать данные в буфер обмена
+            encrypted-media - позволяет iframe воспроизводить защищенный контент
+            gyroscope - позволяет iframe получать доступ к данным гироскопа
+            picture-in-picture - позволяет iframe воспроизводить контент в режиме picture-in-picture
+            web-share - позволяет iframe делиться контентом с помощью API Web Share
+            referrerpolicy - политика отправки реферера при запросе контента
+            strict-origin-when-cross-origin - отправляет реферер только при переходе на другой домен
+            allowfullscreen - позволяет iframe запрашивать разрешение на полноэкранный режим
+            */ -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LOCX9Ab3pH4?si=9kVxxJULHTVEXs-b"
+            title="YouTube video player" 
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            ></iframe>
+        <iframe width="560" height="315" src="https://rutube.ru/play/embed/fc6d63d0be9602b71eb2cfb6d282d8e2/" frameBorder="0"
+            allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+        </iframe>
+        <iframe src="https://vk.com/video_ext.php?oid=575067212&id=456239257&hd=3&autoplay=1" width="560" height="315"
+            allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <div id="maps" style="display: flex" ;>
+        <!-- Можно сделать фулскрин, загрузится, когда пользователь долистает до элемента, рефферер не будет отправлен при переходе на http -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511.2570529419204!2d29.294204123871587!3d53.13923683920023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d72e1cb49a2c3f%3A0x65684814f9875a6e!2z0KMg0J3QsNGA0LrRg9C70Lg!5e0!3m2!1sru!2sby!4v1727090938691!5m2!1sru!2sby"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div style="position:relative;overflow:hidden;">
+            <!-- Ссылка (ее не видно) -->
+            <a href="https://yandex.by/maps/20845/albuquerque/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Альбукерке
+            </a>
+            <!-- Ссылка (ее не видно) -->
+            <a href="https://yandex.by/maps/geo/city_of_albuquerque/2240228385/?ll=-106.550100%2C35.102780&utm_medium=mapframe&utm_source=maps&z=13.88"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Город Альбукерке — Яндекс Карты
+            </a>
+            <!-- Iframe с картой -->
+            <iframe
+                src="https://yandex.by/map-widget/v1/?ll=-106.550100%2C35.102780&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMjQwMjI4Mzg1EkxVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EsIE5ldyBNZXhpY28sIEJlcm5hbGlsbG8gQ291bnR5LCBDaXR5IG9mIEFsYnVxdWVycXVlIgoNIUzVwhVTVgxC&z=13.88"
+                width="600" height="450" frameborder="1" allowfullscreen="true" style="position:relative;">
+            </iframe>
+        </div>
+        <iframe width="600" height="450"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=29.22575175762177%2C53.13262316382271%2C29.228943586349487%2C53.13387834566998&amp;layer=mapnik"
+            style="border: 1px solid black">
+        </iframe>
+        <br />
+    </div>
+</body>
+</html>
